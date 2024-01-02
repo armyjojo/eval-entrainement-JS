@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('./font-family/Lato-Light.ttf') format('truetype')
+}
+
+body {
+  font-family: 'Lato';
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+header, h1 {
+  font-size: 45px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  margin: 50px 0 0 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#section1 {
+  font-size: 30px;
+  grid-column: 1fr;
+  grid-row: 2 / 3;
+  text-align: center;
+  background-color: #8080ff;
+}
+
+#section2 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: #bfbfbf 1px solid;
+}
+
+#section3 {
+  font-size: 30px;
+  grid-column: 3 / 3;
+  grid-row: 2 / 3;
+  text-align: center;
+  background-color: #ff9999;
+}
+
+#section4 {
+  font-size: 20px;
+  font-weight: bold;
+  grid-column: 1fr;
+  grid-row: 3 / 3;
+  margin: 50px 150px 50px 150px;
+  text-align: center;
+  border: red solid 5px;
+}
+
+#section5 {
+  font-size: 25px;
+  font-weight: bold;
+  grid-column: 2 / 3;
+  grid-row: 3 / 3;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#section6 {
+  font-size: 20px;
+  font-weight: bold;
+  grid-column: 3 / 3;
+  grid-row: 3 / 3;
+  margin: 50px 150px 50px 150px;
+  text-align: center;
+  border: red solid 5px;
+}
+
+.score {
+  font-size: 50px;
+}
+
+.current-number {
+  font-size: 50px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.turn-player {
+  content: url(./images/bullet.svg);
+  height: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    grid-template-columns: 137px 137px 137px;
+    grid-template-rows: 150px 150px 150px;
+  }
+  header, h1 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  #section1 {
+    width: 100px;
+    height: 130px;
+    font-size: 10px;
+    margin: 0 0 0 0;
+  }
+  #section2 {
+    width: 100px;
+    height: 130px;
+    margin: 0 0 0 0;
+  }
+  #section3 {
+    width: 100px;
+    height: 130px;
+    font-size: 10px;
+    margin: 0 0 0 0;
+  }
+  #section4 {
+    width: 100px;
+    height: 130px;
+    font-size: 10px;
+    margin: 0 0 0 0;
+  }
+  #section5 {
+    font-size: 20px;
+    width: 100px;
+    height: 130px;
+    margin: 0 0 0 0;
+  }
+  #section6 {
+    width: 100px;
+    height: 130px;
+    font-size: 10px;
+    margin: 0 0 0 0;
+  }
+  .dice {
+    margin-top: 20px;
+    height: 100px;
+  }
+  .score {
+    font-size: 30px;
+  }
+  .turn-player {
+    height: 15px;
+  }
+
+}
